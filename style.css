@@ -1,0 +1,131 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('3409297.jpg'); /* Replace with your image file path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+/* Transparent Login Container */
+.container {
+    display: flex;
+    flex-direction: row; /* Aligns content in column layout */
+    justify-content: center;
+    align-items: center; /* Centers content */
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust transparency here */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Frosted glass for Safari */
+    width: 350px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.753); /* Soft border to enhance transparency */
+    transition: background-color 0.5s ease; /* Smooth transition for transparency */
+}
+
+/* Change transparency on hover */
+.container:hover {
+    background-color: rgba(255, 255, 255, 0.842); /* More solid on hover */
+}
+
+/* Heading Styles */
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Labels and Inputs */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #ddd; /* Light text color */
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="submit"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background for inputs */
+    color: #333;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    background-color: #07f107;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #04f504;
+}
+
+/* Link Styling */
+p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Error and Success Messages */
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: rgb(3, 27, 248);
+    margin-bottom: 10px;
+}
+
+/* Welcome Page Styling */
+.welcome-msg {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Makes container width responsive */
+    }
+}
